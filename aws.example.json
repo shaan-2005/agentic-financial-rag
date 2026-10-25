@@ -1,0 +1,8 @@
+{
+  "region": "us-east-1",
+  "bucket": "replace-with-your-private-bucket-name",
+  "prefix": "documents/",
+  "profile": "finance-rag-dev",
+  "expected_user": "finance-rag-dev",
+  "max_document_bytes": 52428800
+}

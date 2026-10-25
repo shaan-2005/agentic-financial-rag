@@ -1,0 +1,32 @@
+[
+  {
+    "id": "goldman-outlook-2025",
+    "path": "data/documents/gs_outlook.pdf",
+    "publisher": "Goldman Sachs",
+    "document_type": "market_outlook",
+    "forecast_year": 2025,
+    "publication_date": "2025-01",
+    "expected_pages": 118,
+    "expected_sha256": "3586be6d093b3d8f9d9cc95fa340aea31e1352ad99758c9bec2382ba84132547"
+  },
+  {
+    "id": "jpm-outlook-2025",
+    "path": "data/documents/jpm_outlook.pdf",
+    "publisher": "JP Morgan",
+    "document_type": "market_outlook",
+    "forecast_year": 2025,
+    "publication_date": null,
+    "expected_pages": 94,
+    "expected_sha256": "85506505c38540f56285fcc2971e0e4015c580dd5149c3f4ab58b219fc80c350"
+  },
+  {
+    "id": "imf-outlook-2025-10",
+    "path": "data/documents/imf_outlook.pdf",
+    "publisher": "IMF",
+    "document_type": "macro_report",
+    "forecast_year": 2025,
+    "publication_date": "2025-10",
+    "expected_pages": 186,
+    "expected_sha256": "a0ece6ccdd7d40f38f453dd77728c67d8d5ccf79558ed6a6c778850767abd093"
+  }
+]

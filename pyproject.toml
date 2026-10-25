@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finance-rag"
+version = "0.1.0"
+description = "An incremental extension of an existing financial-document RAG notebook."
+requires-python = ">=3.11"
+dependencies = [
+  "filelock>=3,<4",
+  "boto3[crt]>=1.41,<2",
+  "chromadb>=1.0,<2",
+  "sentence-transformers>=5,<6",
+  "pypdf[crypto]>=6,<7",
+  "fonttools>=4,<5",
+  "langchain-text-splitters>=1,<2",
+  "langgraph>=1,<2",
+  "langchain-groq>=1,<2",
+]
+
+[project.scripts]
+finance-rag = "finance_rag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

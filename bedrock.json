@@ -1,0 +1,11 @@
+{
+  "region": "us-east-1",
+  "model_id": "amazon.nova-micro-v1:0",
+  "max_output_tokens": 768,
+  "max_model_calls": 4,
+  "max_request_bytes": 48000,
+  "input_usd_per_million_tokens": 0.035,
+  "output_usd_per_million_tokens": 0.14,
+  "pricing_reference": "https://aws.amazon.com/blogs/machine-learning/cost-efficient-custom-text-to-sql-using-amazon-nova-micro-and-amazon-bedrock-on-demand-inference/",
+  "pricing_note": "Planning estimate from AWS-published rates, not an AWS bill or guarantee of credit coverage. Verify current regional pricing before extended use."
+}

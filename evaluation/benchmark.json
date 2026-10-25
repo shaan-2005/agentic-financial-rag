@@ -1,0 +1,663 @@
+{
+  "version": 1,
+  "author": "assistant-authored, source-checked draft",
+  "independent_human_review": "pending",
+  "split_policy": "24 development and 16 reserved test questions. Test questions use different primary evidence pages from development questions. Never tune against test-query results. Corpus-aware questions are not an independent public benchmark.",
+  "document_sha256": {
+    "gs_outlook.pdf": "3586be6d093b3d8f9d9cc95fa340aea31e1352ad99758c9bec2382ba84132547",
+    "jpm_outlook.pdf": "85506505c38540f56285fcc2971e0e4015c580dd5149c3f4ab58b219fc80c350",
+    "imf_outlook.pdf": "a0ece6ccdd7d40f38f453dd77728c67d8d5ccf79558ed6a6c778850767abd093"
+  },
+  "questions": [
+    {
+      "id": "gs01",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What global growth rate does Goldman Sachs expect for 2025, and how does it compare with trend?",
+      "answerable": true,
+      "expected_answer": "3.1%, above a 2.9% trend.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 58,
+          "excerpt": "We expect global economic growth to reach 3.1% in 2025, compared to its 2.9% trend rate."
+        }
+      ]
+    },
+    {
+      "id": "gs02",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What US growth rate does Goldman Sachs forecast for 2025, compared with US trend growth?",
+      "answerable": true,
+      "expected_answer": "2.3%, compared with 1.9% trend.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 45,
+          "excerpt": "US growth of 2.3%, which is above trend growth of 1.9%."
+        }
+      ]
+    },
+    {
+      "id": "gs03",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What are Goldman Sachs projected and trend Eurozone growth rates for 2025?",
+      "answerable": true,
+      "expected_answer": "1.0% projected versus 1.2% trend.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 45,
+          "excerpt": "Eurozone growth of 1.0%, which is slightly below trend growth of 1.2%."
+        }
+      ]
+    },
+    {
+      "id": "gs04",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What UK growth and trend rates are stated in Goldman Sachs 2025 outlook?",
+      "answerable": true,
+      "expected_answer": "1.2% growth versus 1.4% trend.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 45,
+          "excerpt": "UK growth of 1.2%, which is also slightly below trend growth of 1.4%."
+        }
+      ]
+    },
+    {
+      "id": "gs05",
+      "split": "dev",
+      "category": "numerical",
+      "question": "How does Goldman Sachs expected Japanese growth compare with its trend rate?",
+      "answerable": true,
+      "expected_answer": "1.0% growth versus 0.6% trend.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 45,
+          "excerpt": "Japanese growth of 1.0%, which is above trend growth of 0.6%."
+        }
+      ]
+    },
+    {
+      "id": "gs06",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What emerging-market growth rate does Goldman Sachs expect in its 2025 outlook?",
+      "answerable": true,
+      "expected_answer": "4.1%, above trend.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 45,
+          "excerpt": "Emerging market growth of 4.1%, which is above trend."
+        }
+      ]
+    },
+    {
+      "id": "gs07",
+      "split": "test",
+      "category": "historical",
+      "question": "According to Goldman Sachs, what was the S&P 500 total return in 2024?",
+      "answerable": true,
+      "expected_answer": "25%.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 3,
+          "excerpt": "with a total return of 25%"
+        }
+      ]
+    },
+    {
+      "id": "gs08",
+      "split": "test",
+      "category": "historical",
+      "question": "What 2024 local-currency return does Goldman Sachs report for non-US developed equities?",
+      "answerable": true,
+      "expected_answer": "12%, measured by MSCI EAFE in local currency.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 3,
+          "excerpt": "compared to 12% for non-US developed market equities"
+        }
+      ]
+    },
+    {
+      "id": "gs09",
+      "split": "test",
+      "category": "historical",
+      "question": "What was the 2024 emerging-market equity return in local currency according to Goldman Sachs?",
+      "answerable": true,
+      "expected_answer": "14%, measured by the MSCI EM index.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 3,
+          "excerpt": "and 14% for emerging market equities"
+        }
+      ]
+    },
+    {
+      "id": "gs10",
+      "split": "test",
+      "category": "historical",
+      "question": "How much did the US dollar appreciate in 2024 according to Goldman Sachs DXY discussion?",
+      "answerable": true,
+      "expected_answer": "7%.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 3,
+          "excerpt": "US dollar appreciated by 7%"
+        }
+      ]
+    },
+    {
+      "id": "gs11",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What probability of a US recession underpins Goldman Sachs 2025 expected returns?",
+      "answerable": true,
+      "expected_answer": "20% for the Investment Strategy Group, not the separate GIR estimate of 15%.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 45,
+          "excerpt": "A 20% probability of a US recession"
+        }
+      ]
+    },
+    {
+      "id": "gs12",
+      "split": "dev",
+      "category": "policy",
+      "question": "What monetary-policy direction does Goldman Sachs expect for Japan in 2025?",
+      "answerable": true,
+      "expected_answer": "Slowly raising rates, unlike easing in most major developed central banks.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 58,
+          "excerpt": "Japan, on the other hand, will slowly raise rates"
+        }
+      ]
+    },
+    {
+      "id": "jp01",
+      "split": "dev",
+      "category": "qualitative",
+      "question": "What three approaches does JP Morgan recommend for portfolio resilience?",
+      "answerable": true,
+      "expected_answer": "Rely more on income; add assets that mitigate inflation; use options and derivatives to shift risk and reward.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 42,
+          "excerpt": "relying more on income; adding assets that may help mitigate the threat of inflation; and using options and derivatives strategies to shift risk and reward profiles"
+        }
+      ]
+    },
+    {
+      "id": "jp02",
+      "split": "dev",
+      "category": "qualitative",
+      "question": "Which types of core fixed-income debt does JP Morgan describe as the first place to look for yield?",
+      "answerable": true,
+      "expected_answer": "Investment-grade sovereign, municipal and corporate debt.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 45,
+          "excerpt": "Core fixed income (investment-grade sovereign, municipal and corporate debt) is the first place to look for yield."
+        }
+      ]
+    },
+    {
+      "id": "jp03",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What yield level does JP Morgan report for investment-grade corporate bonds?",
+      "answerable": true,
+      "expected_answer": "Over 5%.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 45,
+          "excerpt": "Investment-grade corporate bonds still yield over 5%."
+        }
+      ]
+    },
+    {
+      "id": "jp04",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What fraction of broad-market volatility does JP Morgan attribute to quality dividend stocks?",
+      "answerable": true,
+      "expected_answer": "80%.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 45,
+          "excerpt": "quality dividend stocks tend to exhibit only 80% of the volatility of the broad market."
+        }
+      ]
+    },
+    {
+      "id": "jp05",
+      "split": "dev",
+      "category": "qualitative",
+      "question": "What kind of shock does JP Morgan say bonds cannot protect against?",
+      "answerable": true,
+      "expected_answer": "Inflation shocks; the paragraph contrasts this with diversification against growth shocks.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 47,
+          "excerpt": "they cannot protect against inflation shocks."
+        }
+      ]
+    },
+    {
+      "id": "jp06",
+      "split": "dev",
+      "category": "qualitative",
+      "question": "Which real assets does JP Morgan identify as having historically low correlations to stocks and bonds?",
+      "answerable": true,
+      "expected_answer": "Real estate, commodities and infrastructure.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 47,
+          "excerpt": "have exhibited low correlations to stocks and bonds."
+        }
+      ]
+    },
+    {
+      "id": "jp07",
+      "split": "test",
+      "category": "numerical",
+      "question": "What gold-reserve shares does JP Morgan report for the PBOC, ECB and Federal Reserve?",
+      "answerable": true,
+      "expected_answer": "PBOC 5%, ECB 60%, Federal Reserve 73%.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 50,
+          "excerpt": "holds 5% of its reserves in gold relative to the ECB at 60% and the Federal Reserve (Fed) at 73%."
+        }
+      ]
+    },
+    {
+      "id": "jp08",
+      "split": "test",
+      "category": "numerical",
+      "question": "How much extra gold per year have central banks been buying compared with before Russia invaded Ukraine, according to JP Morgan?",
+      "answerable": true,
+      "expected_answer": "1,500 tons more per year.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 50,
+          "excerpt": "which have been buying 1,500 tons more gold per year than their pace before Russia invaded Ukraine."
+        }
+      ]
+    },
+    {
+      "id": "jp09",
+      "split": "test",
+      "category": "numerical",
+      "question": "According to JP Morgan, roughly what share of publicly traded companies suffer catastrophic losses and underperform the index?",
+      "answerable": true,
+      "expected_answer": "Nearly half suffer a catastrophic loss at some point; nearly two-thirds underperform the index.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 44,
+          "excerpt": "nearly half of all publicly traded companies at some point suffer a catastrophic loss in value, and nearly two-thirds underperform the index."
+        }
+      ]
+    },
+    {
+      "id": "jp10",
+      "split": "test",
+      "category": "historical",
+      "question": "What fraction of broad-equity-market returns does JP Morgan say equity-linked structured notes historically delivered?",
+      "answerable": true,
+      "expected_answer": "Two-thirds; a historical observation, not a guaranteed future return.",
+      "required_evidence": [
+        {
+          "source": "jpm_outlook.pdf",
+          "publisher": "JP Morgan",
+          "pdf_page": 49,
+          "excerpt": "delivered two-thirds of the return of broad equity markets"
+        }
+      ]
+    },
+    {
+      "id": "im01",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What annual global growth does the October 2025 IMF WEO project for 2025?",
+      "answerable": true,
+      "expected_answer": "3.2%.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 29,
+          "excerpt": "Global growth is projected to decelerate from 3.3 percent in 2024 to 3.2 percent in 2025 and to 3.1 percent in 2026"
+        }
+      ]
+    },
+    {
+      "id": "im02",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What annual global growth does the October 2025 IMF WEO project for 2026?",
+      "answerable": true,
+      "expected_answer": "3.1%.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 29,
+          "excerpt": "Global growth is projected to decelerate from 3.3 percent in 2024 to 3.2 percent in 2025 and to 3.1 percent in 2026"
+        }
+      ]
+    },
+    {
+      "id": "im03",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What Q4-over-Q4 global growth rates does the IMF project for 2025 and 2026?",
+      "answerable": true,
+      "expected_answer": "2.6% in 2025 and 3.3% in 2026; distinguish these from annual rates.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 29,
+          "excerpt": "growth is projected to decline from 3.6 percent in 2024 to 2.6 percent in 2025 and recover to 3.3 percent in 2026."
+        }
+      ]
+    },
+    {
+      "id": "im04",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What advanced-economy growth does the IMF project for 2025 and 2026?",
+      "answerable": true,
+      "expected_answer": "1.6% in each year.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 31,
+          "excerpt": "For advanced economies, growth is projected to be 1.6 percent in 2025 and 2026"
+        }
+      ]
+    },
+    {
+      "id": "im05",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What US annual growth rates does the October IMF outlook forecast for 2025 and 2026?",
+      "answerable": true,
+      "expected_answer": "2.0% in 2025 and 2.1% in 2026.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 31,
+          "excerpt": "In the United States, growth is projected to slow to 2.0 percent in 2025 and remain steady at 2.1 percent in 2026"
+        }
+      ]
+    },
+    {
+      "id": "im06",
+      "split": "dev",
+      "category": "numerical",
+      "question": "What euro-area growth rates does the IMF expect for 2025 and 2026?",
+      "answerable": true,
+      "expected_answer": "1.2% in 2025 and 1.1% in 2026.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 31,
+          "excerpt": "to 1.2 percent in 2025 and to 1.1 percent in 2026"
+        }
+      ]
+    },
+    {
+      "id": "im07",
+      "split": "test",
+      "category": "assumptions",
+      "question": "What average oil prices per barrel are assumed for 2025 and 2026 in the October IMF WEO?",
+      "answerable": true,
+      "expected_answer": "$68.92 in 2025 and $65.84 in 2026; these are working assumptions.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 9,
+          "excerpt": "the average price of oil will be $68.92 a barrel in 2025 and $65.84 a barrel in 2026"
+        }
+      ]
+    },
+    {
+      "id": "im08",
+      "split": "test",
+      "category": "assumptions",
+      "question": "What US three-month government bond yields are assumed for 2025 and 2026 in the IMF WEO?",
+      "answerable": true,
+      "expected_answer": "4.3% in 2025 and 3.7% in 2026; distinguish from ten-year yields.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 9,
+          "excerpt": "the three-month government bond yield for the United States will average 4.3 percent in 2025 and 3.7 percent in 2026"
+        }
+      ]
+    },
+    {
+      "id": "im09",
+      "split": "test",
+      "category": "metadata",
+      "question": "Through what date was statistical information available for the October 2025 IMF projections?",
+      "answerable": true,
+      "expected_answer": "September 30, 2025, with a caveat that this may not reflect all latest published data.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 9,
+          "excerpt": "statistical information available through September 30, 2025"
+        }
+      ]
+    },
+    {
+      "id": "im10",
+      "split": "test",
+      "category": "definitions",
+      "question": "How does the IMF explain 25 basis points in percentage-point terms?",
+      "answerable": true,
+      "expected_answer": "One quarter of one percentage point.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 9,
+          "excerpt": "25 basis points are equivalent to ¼ of 1 percentage point"
+        }
+      ]
+    },
+    {
+      "id": "im11",
+      "split": "test",
+      "category": "metadata",
+      "question": "Which newly added country appears in advanced-economy composites in this IMF WEO?",
+      "answerable": true,
+      "expected_answer": "Liechtenstein.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 9,
+          "excerpt": "Data for Liechtenstein have been added to the database"
+        }
+      ]
+    },
+    {
+      "id": "im12",
+      "split": "test",
+      "category": "definitions",
+      "question": "Does the IMF generally report calendar-year or fiscal-year data?",
+      "answerable": true,
+      "expected_answer": "Calendar years, except some countries using fiscal years.",
+      "required_evidence": [
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 9,
+          "excerpt": "Data refer to calendar years, except in the case of a few countries that use fiscal years."
+        }
+      ]
+    },
+    {
+      "id": "cmp01",
+      "split": "dev",
+      "category": "comparison",
+      "question": "Compare Goldman Sachs January outlook and IMF October outlook forecasts for annual global growth in 2025. Account for the publication timing.",
+      "answerable": true,
+      "expected_answer": "Goldman 3.1% in January; IMF 3.2% in October. IMF is 0.1 percentage point higher, but these are different forecast vintages.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 58,
+          "excerpt": "We expect global economic growth to reach 3.1% in 2025, compared to its 2.9% trend rate."
+        },
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 29,
+          "excerpt": "Global growth is projected to decelerate from 3.3 percent in 2024 to 3.2 percent in 2025 and to 3.1 percent in 2026"
+        }
+      ]
+    },
+    {
+      "id": "cmp02",
+      "split": "dev",
+      "category": "comparison",
+      "question": "How do Goldman Sachs and the IMF differ on US growth in 2025 in these reports?",
+      "answerable": true,
+      "expected_answer": "Goldman 2.3%; IMF 2.0%. Difference 0.3 percentage point, with January versus October publication timing.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 45,
+          "excerpt": "US growth of 2.3%, which is above trend growth of 1.9%."
+        },
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 31,
+          "excerpt": "In the United States, growth is projected to slow to 2.0 percent in 2025 and remain steady at 2.1 percent in 2026"
+        }
+      ]
+    },
+    {
+      "id": "cmp03",
+      "split": "dev",
+      "category": "comparison",
+      "question": "Compare the Goldman Sachs and IMF 2025 growth forecasts for the euro area.",
+      "answerable": true,
+      "expected_answer": "Goldman Eurozone 1.0%; IMF euro area 1.2%. IMF is 0.2 percentage point higher; publication vintages differ.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 45,
+          "excerpt": "Eurozone growth of 1.0%, which is slightly below trend growth of 1.2%."
+        },
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 31,
+          "excerpt": "to 1.2 percent in 2025 and to 1.1 percent in 2026"
+        }
+      ]
+    },
+    {
+      "id": "cmp04",
+      "split": "dev",
+      "category": "comparison",
+      "question": "Do Goldman Sachs and the IMF expect Japanese policy rates to rise or fall?",
+      "answerable": true,
+      "expected_answer": "Both describe rates rising; IMF projects movement toward a neutral setting of about 1.5% over the medium term.",
+      "required_evidence": [
+        {
+          "source": "gs_outlook.pdf",
+          "publisher": "Goldman Sachs",
+          "pdf_page": 58,
+          "excerpt": "Japan, on the other hand, will slowly raise rates"
+        },
+        {
+          "source": "imf_outlook.pdf",
+          "publisher": "IMF",
+          "pdf_page": 29,
+          "excerpt": "toward a neutral setting of about 1.5 percent"
+        }
+      ]
+    },
+    {
+      "id": "neg01",
+      "split": "test",
+      "category": "abstention",
+      "question": "What was Apple exact closing share price on October 12, 2026?",
+      "answerable": false,
+      "expected_answer": "Not found in these 2025 reports; do not invent an observed future price.",
+      "required_evidence": []
+    },
+    {
+      "id": "neg02",
+      "split": "test",
+      "category": "abstention",
+      "question": "What is the password for my personal bank account?",
+      "answerable": false,
+      "expected_answer": "Not found in the reports; do not invent private account information.",
+      "required_evidence": []
+    }
+  ]
+}

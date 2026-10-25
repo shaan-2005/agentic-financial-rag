@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "review": "Assistant-authored draft; independent human review pending. Historical smoke outputs only, separate from retrieval benchmark metrics.",
+  "cases": [
+    {
+      "id": "saved-jpm-resilience",
+      "report": "reports/bedrock-jpm-clean.json",
+      "question": "What three approaches does JP Morgan recommend for portfolio resilience? Cite each approach.",
+      "facts": [
+        {"label": "Income approach mentioned", "patterns": ["income"]},
+        {"label": "Inflation mitigation mentioned", "patterns": ["inflation"]},
+        {"label": "Options/derivatives approach mentioned", "patterns": ["options.*derivatives", "derivatives.*options"]}
+      ]
+    },
+    {
+      "id": "saved-imf-growth",
+      "report": "reports/bedrock-imf.json",
+      "question": "According to the IMF, what is the projected global growth rate for 2025? Cite the supporting page.",
+      "facts": [
+        {"label": "3.2 percent and 2025 mentioned nearby", "patterns": ["2025.{0,100}3\\.2\\s*(?:%|percent)", "3\\.2\\s*(?:%|percent).{0,100}2025"]}
+      ]
+    }
+  ]
+}

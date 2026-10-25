@@ -1,0 +1,20 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "normalize_embeddings": false,
+  "chunk_size": 1000,
+  "chunk_overlap": 200,
+  "top_k": 6,
+  "baseline_collection": "finance_multi_doc",
+  "rebuilt_collection": "finance_reproducible_v1",
+  "groq_model": "llama-3.3-70b-versatile",
+  "max_tool_rounds": 3,
+  "max_output_tokens": 1000,
+  "retrieval_strategy": "hybrid",
+  "candidate_k": 40,
+  "rrf_constant": 60,
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "reranker_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "query_mode": "original",
+  "context_mode": "page-window"
+}

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+data/
+reports/*.json
+reports/*.jsonl
+*.zip
+aws.json
+infra/registration-template.json
